@@ -156,11 +156,11 @@ svg {
   font-weight: var(--fw-regular);
 }
 
-.font-primary-heading {
+.fs-primary-heading {
   font-size: var(--fs-primary-heading);
 }
 
-.font-secondary-heading {
+.fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
 }
 
