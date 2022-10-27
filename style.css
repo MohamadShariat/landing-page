@@ -9,7 +9,7 @@
 
   --ff-primary: 'Be Vietnam Pro', sans-serif;
 
-  --ff-body: var(var(--ff-primary));
+  --ff-body: var(--ff-primary);
   --ff-heading: var(var(--ff-primary));
 
   --fw-regular: 400;
@@ -190,4 +190,32 @@ svg {
 
 .fs-900 {
   font-size: var(--fs-900);
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* General styling */
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  flood-color: var(--clr-primary-400);
 }
