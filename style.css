@@ -290,3 +290,43 @@ body {
   color: var(--clr-accent-300);
 }
 
+/* Navigation */
+
+.primary-header{
+  margin-top: var(--size-700);
+}
+
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media(max-width:50em){
+  .primary-navigation{
+    display: none;
+
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  
+  }
+  
+  .mobile-nav-toggle .icon-close{
+    display: none;
+  }
+  
+}
+
+
+
