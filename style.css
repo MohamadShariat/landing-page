@@ -313,6 +313,13 @@ body {
 
   }
 
+
+
+  .primary-navigation[data-visible]{
+    display: block;
+    position: fixed;
+  }
+
   .mobile-nav-toggle{
     display: block;
     cursor: pointer;
@@ -328,8 +335,5 @@ body {
   }
 
 
-.opened{
-  display: block;
-  position:fixed;
-}
+
 
